@@ -75,7 +75,19 @@ make
 pip3 install agx-pypika
 ```
 
-安装过程中 `Building wheel for wxpython (setup.py) ...`  在编译 `wxPython` 这步需要耗时很长，请耐心等待。
+1、安装过程中 `Building wheel for wxpython (setup.py) ...`  在编译 `wxPython` 这步需要耗时很长，请耐心等待。
+
+2、从源码编译 `wxpython` 可能需要半小时甚至更久，且极易报错，最好的办法是寻找已经编译好的版本。
+
+```bash
+pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04 wxpython
+```
+
+*(请将 `ubuntu-22.04` 替换为你对应的系统版本)*
+
+
+
+
 
 ### 源码安装
 
