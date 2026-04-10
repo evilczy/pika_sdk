@@ -50,7 +50,7 @@ class FisheyeCamera:
             bool: 连接是否成功
         """
         try:
-            cv2.setLogLevel(0)
+            # cv2.setLogLevel(0)
             self.cap = cv2.VideoCapture(self.device_id)
             self.fourcc = cv2.VideoWriter_fourcc(*'MJPG')
             self.cap.set(cv2.CAP_PROP_FOURCC, self.fourcc)

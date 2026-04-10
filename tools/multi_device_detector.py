@@ -98,7 +98,7 @@ def get_device_info(device_index):
     # 遍历可能的视频设备
     for i in range(60):  # 检查前60个视频设备
         try:
-            cv2.setLogLevel(0)
+            # cv2.setLogLevel(0)
             cap = cv2.VideoCapture(i)
             if not cap.isOpened():
                 continue
